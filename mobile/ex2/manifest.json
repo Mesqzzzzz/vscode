@@ -1,7 +1,7 @@
 {
   "name": "EuroMilhões",
   "short_name": "EuroMilhões",
-  "start_url": "https://mesqzzzzz.github.io/Mobile-Euromilhoes/ex2/",
+  "start_url": "https://mesqzzzzz.github.io/vscode/mobile/ex2/",
   "display": "standalone",
   "background_color": "#660000",
   "description": "Gerador de números",
