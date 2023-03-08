@@ -1,0 +1,22 @@
+.listDiv{
+    width: 60%;
+    margin-top: 3%;
+    border: 3px solid black;
+    border-radius: 7px;
+    padding: 10px;
+}
+.listHead{
+    margin-bottom: 20px;
+}
+.list-group-item{
+    width: 60%;
+    margin: auto;
+}
+.list-group-item:hover{
+background-color: grey;
+color: white;
+transition: all ease-in 0.1s;
+}
+input[text]{
+    width: 30px;
+}

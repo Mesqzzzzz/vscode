@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Euromilhões</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<center>
+		<h1>Euromilhões</h1>
+		<p>Os números sorteados são:</p>
+		<ul id="numeros">
+		</ul>
+		<p>As estrelas sorteadas são:</p>
+		<ul id="estrelas">
+		</ul>
+		<button onclick="gerarNumeros()">Gerar Novos Números</button>	
+	</center>
+
+	<script>
+function gerarNumeros() {
+  const numeros = new Set();
+  const estrelas = new Set();
+  const listaNumeros = document.getElementById("numeros");
+  const listaEstrelas = document.getElementById("estrelas");
+
+  // Limpa as listas anteriores
+  listaNumeros.innerHTML = "";
+  listaEstrelas.innerHTML = "";
+
+  // Gera cinco números aleatórios entre 1 e 50
+  while (numeros.size < 5) {
+    numeros.add(Math.floor(Math.random() * 50) + 1);
+  }
+
+  // Adiciona os números à lista
+  for (let num of numeros) {
+    const li = document.createElement("li");
+    li.textContent = num;
+    listaNumeros.appendChild(li);
+  }
+
+  // Gera duas estrelas aleatórias entre 1 e 12
+  while (estrelas.size < 2) {
+    estrelas.add(Math.floor(Math.random() * 12) + 1);
+  }
+
+  // Adiciona as estrelas à lista
+  for (let estrela of estrelas) {
+    const li = document.createElement("li");
+    li.textContent = estrela;
+    listaEstrelas.appendChild(li);
+  }
+}
+
+// Gera os números iniciais quando a página é carregada
+gerarNumeros();
+	</script>
+</body>
+</html>
