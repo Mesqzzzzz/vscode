@@ -7,12 +7,12 @@
   "description": "Gerador de números",
   "icons": [
     {
-      "src": "https://mesqzzzzz.github.io/Mobile-Euromilhoes/ex2/img192.png",
+      "src": "https://mesqzzzzz.github.io/vscode/mobile/ex2/img192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://mesqzzzzz.github.io/Mobile-Euromilhoes/ex2/img512.png",
+      "src": "https://mesqzzzzz.github.io/vscode/mobile/ex2/img512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
